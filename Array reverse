@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int num[1000];
+    int i, length;
+    scanf("%d",&length);
+    for(i=0; i<=length-1;i++){
+        scanf("%d",&num[i]);
+    }
+    printf("printing inputs: \n ");
+    for (i=0; i<=length-1; i++){
+        printf("%d\n",num[i]);
+    }
+    printf("reverse inputs: ");
+    for (i=length-1; i>=0; i--){
+        printf("%d ",num[i]);
+    }
+    return 0;
+}
