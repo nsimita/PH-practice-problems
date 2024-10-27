@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    
+    int a[n+5];
+    for(int i=0; i<n; i++){
+        scanf("%d",&a[i]);
+    }
+    
+    int f[10000]={0};
+    
+    for(int i=0; i<n;i++){
+         f[a[i]]=1;
+    }
+    
+    for(int i=0; i<10; i++){
+        printf("%d %d\n",i,f[i]);
+    }
+    
+    //printf("%d",f[9]); // that means the number which i 
+    //want to search i have to print it as frequence array index
+    int m;
+    scanf("%d",&m);
+    for(int i=0; i<n;i++){
+        int x;
+        scanf("%d",&x);
+        if(f[x]==1){
+            printf("%d Yes!\n",f[i]);
+        }
+        else{
+            printf("No\n",f[x]);
+        }
+    }
+    
+    return 0;
+}
