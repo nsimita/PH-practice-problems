@@ -1,0 +1,23 @@
+#include <stdio.h>
+ 
+void Print(int x, int n){
+    if(x>n){
+       printf("over\n"); 
+        return;
+    }
+    
+     
+    Print(x+1,n);
+ 
+     printf("%d\n",x);
+    
+}
+
+int main()
+{
+    int n;
+    printf("enter the number you want to print ");
+    scanf("%d",&n);
+   Print(1, n);
+    return 0;
+}
