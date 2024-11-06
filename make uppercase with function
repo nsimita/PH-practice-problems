@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <ctype.h>
+void makeUpper(char x[]){
+    x[0] = toupper(x[0]);
+    printf("%s",x);
+}
+
+int main()
+{
+    char a[20] ="practice";
+    
+     makeUpper(a);
+    return 0;
+}
